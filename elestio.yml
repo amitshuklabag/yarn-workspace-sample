@@ -4,7 +4,7 @@ config:
     framework: 'React'
     buildCommand: 'npm run build'
     buildDir: 'dist'
-    runCommand: 'npm serve', 
+    runCommand: 'npm serve'
     installCommand: 'npm install'
     rootDir: "/workspace-b"
 exposedPorts:
