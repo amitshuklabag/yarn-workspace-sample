@@ -1,0 +1,30 @@
+config:
+    runTime: 'NodeJs'
+    version: '18'
+    framework: 'React'
+    buildCommand: 'npm run build'
+    buildDir: 'dist'
+    runCommand: 'npm serve', 
+    installCommand: 'npm install'
+    rootDir: "/workspace-b"
+exposedPorts:
+  - protocol: "HTTP"
+    hostPort: "3000"
+    containerPort: "3000"
+    interface: "172.17.0.1"
+ports:
+  - protocol: "HTTPS"
+    targetProtocol: "HTTP"
+    listeningPort: "443"
+    targetPort: "3000"
+    public: true
+    path: "/"
+    isAuth: false
+    login: ""
+    password: ""
+environments:
+    -  key: 'ENV'
+       value: 'production'
+webUI:
+  - url: "https://[CI_CD_DOMAIN]"
+    label: "Website"              
