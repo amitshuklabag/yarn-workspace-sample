@@ -2,9 +2,7 @@ config:
     runTime: 'NodeJs'
     version: '18'
     framework: 'React'
-    buildCommand: 'npm run build'
-    buildDir: 'dist'
-    runCommand: 'npm serve'
+    runCommand: 'npm run serve'
     installCommand: 'npm install'
     rootDir: "/workspace-b"
 exposedPorts:
