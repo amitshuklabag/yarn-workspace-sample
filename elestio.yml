@@ -23,6 +23,8 @@ ports:
 environments:
     -  key: 'ENV'
        value: 'production'
+    -  key: 'PORT'
+       value: '3000'
 webUI:
   - url: "https://[CI_CD_DOMAIN]"
     label: "Website"              
