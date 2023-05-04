@@ -27,4 +27,4 @@ environments:
        value: '3000'
 webUI:
   - url: "https://[CI_CD_DOMAIN]"
-    label: "Website"              
+    label: "Website"         
