@@ -1,11 +1,25 @@
 {
-  "name": "workspace-b",
+  "name": "r3f-vite-starter",
+  "private": true,
   "version": "1.0.0",
-  "dependencies": {
-    "cowsay": "^1.4.0",
-    "workspace-a": "1.0.0"
-  },
+  "type": "module",
   "scripts": {
-    "serve": "node index.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.111.3",
+    "@react-three/fiber": "^8.17.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.167.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "globals": "^15.9.0",
+    "vite": "^5.4.1"
   }
 }
