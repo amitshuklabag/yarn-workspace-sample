@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  app:
+    container_name: yarn-workspace-sample
+    image: yarn-workspace-sample
+    restart: always
+    build:
+      context: .
+    volumes: 
+      - ./src:/app/src
+    ports:
+      - 172.17.0.1:3000:3000
+    environment:
+      DOMAIN: https://yarn-workspace-sample-u131.vm.appdrag.net
+    env_file:
+      - .env
+
+

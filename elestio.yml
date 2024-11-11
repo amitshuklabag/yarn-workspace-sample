@@ -4,7 +4,7 @@ config:
     framework: 'React'
     runCommand: 'npm run serve'
     installCommand: 'npm install'
-    rootDir: "/workspace-b"
+    rootDir: "workspace-a/workspace-b"
 exposedPorts:
   - protocol: "HTTP"
     hostPort: "3000"
